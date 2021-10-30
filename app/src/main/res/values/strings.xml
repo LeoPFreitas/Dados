@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Dados</string>
+    <string name="mensageTv">Clique no botão abaixo para jogar o dado</string>
+    <string name="jogarDadosBt">Jogar</string>
 </resources>

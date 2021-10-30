@@ -4,53 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ConfigActivity">
 
     <TextView
-        android:id="@+id/mensagemTv"
+        android:id="@+id/numeroDadostv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="@string/mensageTv"
-        android:textSize="18sp"
+        android:text="Selecione o número de dados"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/jogarDadoBt"
+    <Spinner
+        android:id="@+id/numeroDadosSp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/jogarDadosBt"
+        android:entries="@array/num_dices"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mensagemTv" />
+        app:layout_constraintTop_toBottomOf="@id/numeroDadostv" />
 
     <TextView
-        android:id="@+id/resultadoTv"
+        android:id="@+id/numeroFacesTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:textSize="18sp"
+        android:text="Entre com o número de faces"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/jogarDadoBt" />
+        app:layout_constraintTop_toBottomOf="@id/numeroDadosSp" />
 
-    <ImageView
-        android:id="@+id/resultadoIv"
+    <EditText
+        android:id="@+id/numeroFacesEt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:inputType="number"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/resultadoTv" />
+        app:layout_constraintTop_toBottomOf="@id/numeroFacesTv" />
 
-    <ImageView
-        android:id="@+id/resultadoIv2"
+    <Button
+        android:id="@+id/salvarBt"
         android:layout_width="0dp"
-        android:layout_height="64dp"
-        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/resultadoIv" />
+        app:layout_constraintTop_toBottomOf="@id/numeroFacesEt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
